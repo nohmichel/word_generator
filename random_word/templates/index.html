@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Random Word Generator</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"> 	
+</head>
+<body>
+	<h2>Random Word {{request.session.counter}}</h2>
+	<div id="generator">
+		<p>{{request.session.word}}</p>
+	</div>	
+	<div id="buttons">
+	<form action="/random_word" method="POST">
+		{% csrf_token %}
+		<input id="button" type="submit" name="Generate" value="Generate">
+		<a href="http://localhost:8000/reset">
+		<input type="button" value="Reset">
+	</form>
+	</div>
+</body>
+</html>

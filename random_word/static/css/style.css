@@ -1,0 +1,35 @@
+body{
+	margin: auto;
+	width: 800px;
+	position: center;
+	background-color: salmon;
+}
+
+h2{
+	text-align: center;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+
+#generator{
+	margin: auto;
+	border: 2px solid black;
+	width: 700px;
+	height: 150px;
+	background-color: white;
+}
+
+p{	
+	text-align: center;
+	font-size: 60px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	margin: 30px 0px 25px 0px;
+}
+
+#buttons{
+	text-align: center;
+	margin-top: 10px;
+	/*margin-top: 10px;*/
+	/*box-shadow: 0 8px 16px black, 9px;*/
+
+}
